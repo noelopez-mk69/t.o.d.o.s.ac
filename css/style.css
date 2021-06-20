@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --golden: rgba(186, 163, 110, 1);
+    --gray: rgba(79, 89, 91, 0.77);
+    --lightsand: rgba(201, 179, 129, 0.3);
+    --black: rgba(27, 27, 27, 1);
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+.golden-text {
+    color: var(--golden) !important;
+}
+.golden-bg {
+    background-color: var(--golden) !important;
+}
+.lightsand-bg {
+    background-color: var(--lightsand) !important;
+}
+.ar16-9 {
+    aspect-ratio: 16/9;
+}
+
+/* * BUTTONS */
+.rounded-button {
+    height: 40px !important;
+    border-radius: 20px !important;
+}
+
+
+
+/* * HERO */
+.hero > * {
+    padding: 0 !important;
+}
+
+.hero > img {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    max-width: 150px;
+}
+.hero > .page-title {
+    /* position: absolute;
+    top: 30%;
+    left: 0;
+    width: 50%; */
+    font-size: 4rem;
+}
+.hero > .form-hero {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 500px;
+    background-color: #fafafa;
+    padding: 1rem !important;
+    margin: 2rem;
+}
+
+
+/* * BENEFITS */
+.img-25 {
+    width: 50%;
+}
+
+/* * DISCOVER  */
+.discover {
+    background: url('../img/TODOS/bg1.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+.discover .img-icon {
+    max-width: 30px;
+}
+
+
+/* * AMENIDADES */
+.amenidades {
+    background: var(--gray);
+}
+
+
+/* * FOOTER  */
+.footer {
+    background: var(--black);
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.418);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+h6{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input,textarea{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+    border-radius:15px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100px;
+    }
+}
+
+/* ! RESPONSIVE */
+@media screen and (max-width: 1280px) {
+    .hero > .page-title {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%)!important;
+        font-size: 4rem;
+        text-align: center;
+        padding-right: 3rem!important;
+    }
+    .hero > .form-hero {
+        position: relative;
+        /* top: 100%; */
+        /* right: 0; */
+        width: 500px;
+        background-color: #fafafa;
+        padding: 1rem !important;
+        margin: 2rem auto;
+        border: 1px solid lightgray;
+    }
+}
+@media screen and (max-width: 968px) {
+    .hero > .page-title {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero > .page-title {
+        font-size: 2rem;
+    }
+    .hero > img {
+        top: 1.2rem;
+        left: 1.2rem;
+        max-width: 100px;
+    }
+}
+@media screen and (max-width: 575px) {
+    /* .hero > .page-title {
+        top: 150px;
+    } */
+    .form-hero {
+        width: 100%;
+    }
+    .img-25 {
+        width: 25% !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* .hero > .page-title {
+        top: 100px;
+    } */
+    .hero > .page-title {
+        font-size: 1.5rem;
+    }
+    .hero > img {
+        top: 1rem;
+        left: 1rem;
+        max-width: 50px;
+    }
+}
+@media screen and (max-width: 380px) {
+    /* .hero > .page-title {
+        top: 100px;
+    } */
+    .hero > .page-title {
+        font-size: 1.2rem;
+    }
+}
